@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #game-over, #level-complete {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  #play-area {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: gray;
+    border: 1px solid black;
+   }
+   .lane-line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(
+        to right,
+        white 0,
+        white 10px,
+        gray 10px,
+        gray 20px
+    );
+}
+
+  
+.player {
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    background-image: url('/Users/wang/Desktop/cars/player.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    image-rendering: auto;
+}
+  
+.car {
+    width: 80px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    image-rendering: auto;
+}

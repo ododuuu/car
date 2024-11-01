@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橫穿馬路</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>橫穿馬路</h1>
+    <div id="game-over" style="display: none;">
+        <h2>你輸了！</h2>
+        <p>分數： <span id="final-score">0</span></p>
+        <button onclick="restartGame()">重新開始</button>
+    </div>
+    <div id="level-complete" style="display: none;">
+        <h2>恭喜，你過關了！</h2>
+        <p>當前關卡： <span id="current-level">1</span></p>
+        <button onclick="nextLevel()">繼續下一關</button>
+        <button onclick="closeWindow()">退出遊戲</button>
+    </div>
+    <div id="timer">60</div>
+    <div id="score">得分: 0</div>
+    <div id="play-area">
+        <div class="lane-line" style="top: 12%;"></div>
+        <div class="lane-line" style="top: 24%;"></div>
+        <div class="lane-line" style="top: 38%;"></div>
+        <div class="lane-line" style="top: 49%;"></div>
+        <div class="lane-line" style="top: 63%;"></div>
+        <div class="lane-line" style="top: 72%;"></div>
+        <div class="lane-line" style="top: 86%;"></div>
+        <div id="player" class="player"></div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
